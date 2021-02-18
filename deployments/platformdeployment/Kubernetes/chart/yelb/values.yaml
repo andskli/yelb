@@ -5,9 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: nginx
-  tag: stable
-  pullPolicy: IfNotPresent
+  appserver: public.ecr.aws/f8u6t4e3/yelb-appserver:latest
+  db: public.ecr.aws/f8u6t4e3/yelb-db:latest
+  ui: public.ecr.aws/f8u6t4e3/yelb-ui:latest
+  redis: public.ecr.aws/f8u6t4e3/yelb-redis:latest
 
 service:
   type: LoadBalancer
