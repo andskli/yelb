@@ -33,7 +33,7 @@ spec:
         paths:
           - path: {{ $ingressPath }}
             backend:
-              serviceName: {{ $fullName }}-ui
+              serviceName: {{ template "yelb.fullname" . }}-ui
               servicePort: http
   {{- end }}
 {{- end }}
