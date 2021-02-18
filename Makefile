@@ -1,4 +1,4 @@
-AWS_ACCOUNT_ID ?= 858858334736
+AWS_ACCOUNT_ID ?= 1234
 AWS_REGION ?= eu-north-1
 ECR_REGISTRY_ALIAS ?= f8u6t4e3
 APPS = yelb-ui yelb-appserver yelb-db yelb-redis

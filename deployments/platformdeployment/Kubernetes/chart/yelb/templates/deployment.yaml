@@ -30,7 +30,7 @@ kind: Deployment
 metadata:
   name: {{ template "yelb.fullname" . }}-cache
 spec:
-  replicas: {{ .Values.replicaCount }}
+  replicas: 1
   selector:
     matchLabels:
       app: {{ template "yelb.fullname" . }}
@@ -57,7 +57,7 @@ kind: Deployment
 metadata:
   name: {{ template "yelb.fullname" . }}-db
 spec:
-  replicas: {{ .Values.replicaCount }}
+  replicas: 1
   selector:
     matchLabels:
       app: {{ template "yelb.fullname" . }}
